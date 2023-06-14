@@ -1,4 +1,4 @@
-import { serializePrisma } from '@ookamiiixd/baileys-store';
+import { serializePrisma } from '@f3lpz/baileys-store';
 import type { RequestHandler } from 'express';
 import { logger, prisma } from '../shared';
 

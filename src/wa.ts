@@ -1,12 +1,12 @@
-import type { ConnectionState, proto, SocketConfig, WASocket } from '@adiwajshing/baileys';
+import type { ConnectionState, proto, SocketConfig, WASocket } from '@whiskeysockets/baileys';
 import makeWASocket, {
   Browsers,
   DisconnectReason,
   isJidBroadcast,
   makeCacheableSignalKeyStore,
-} from '@adiwajshing/baileys';
+} from '@whiskeysockets/baileys';
 import type { Boom } from '@hapi/boom';
-import { initStore, Store, useSession } from '@ookamiiixd/baileys-store';
+import { initStore, Store, useSession } from '@f3lpz/baileys-store';
 import type { Response } from 'express';
 // import { writeFile } from 'fs/promises';
 // import { join } from 'path';
@@ -207,7 +207,7 @@ export async function createSession(options: createSessionOptions) {
 
 export function getSessionStatus(session: Session) {
   const state = ['CONNECTING', 'CONNECTED', 'DISCONNECTING', 'DISCONNECTED'];
-  let status = state[(session.ws as WebSocket).readyState];
+  let status = state[(session.ws as unknown as WebSocket).readyState];
   status = session.user ? 'AUTHENTICATED' : status;
   return status;
 }

@@ -1,6 +1,6 @@
-import type { proto, WAGenericMediaMessage, WAMessage } from '@adiwajshing/baileys';
-import { downloadMediaMessage } from '@adiwajshing/baileys';
-import { serializePrisma } from '@ookamiiixd/baileys-store';
+import type { proto, WAGenericMediaMessage, WAMessage } from '@whiskeysockets/baileys';
+import { downloadMediaMessage } from '@whiskeysockets/baileys';
+import { serializePrisma } from '@f3lpz/baileys-store';
 import type { RequestHandler } from 'express';
 import { logger, prisma } from '../shared';
 import { delay as delayMs } from '../utils';

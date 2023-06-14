@@ -18,9 +18,9 @@
     "format": "prettier . --write"
   },
   "dependencies": {
-    "@adiwajshing/baileys": "^5.0.0",
+    "@whiskeysockets/baileys": "^6.0.0",
     "@hapi/boom": "^10.0.0",
-    "@ookamiiixd/baileys-store": "^1.0.0-beta.0",
+    "@f3lpz/baileys-store": "^1.0.0-beta.2",
     "@prisma/client": "^4.7.1",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
@@ -30,7 +30,8 @@
     "pino": "^8.7.0",
     "qrcode": "^1.5.1",
     "qrcode-terminal": "^0.12.0",
-    "sharp": "^0.30.5"
+    "sharp": "^0.30.5",
+    "@adiwajshing/keyed-db": "^0.2.4"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
